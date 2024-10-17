@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoeyoursole</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="fav.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#collection">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <!-- Social Media Links in Navbar -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section with Live Video Background -->
+<header class="hero-section text-white text-center">
+    <div class="video-container">
+        <video autoplay muted loop class="hero-video">
+            <source src="/shoe/HERO.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="hero-content">
+        <div class="container">
+            <h1>Welcome to Shoeyoursole</h1>
+            <p>Find the best shoes to fit your style!</p>
+            <!-- Decorative boxes in the hero section -->
+        <div class="nested-boxes"></div>
+        <div class="nested-boxes"></div>
+        <div class="nested-boxes"></div>
+        </div>
+    </div>
+</header>
+
+    <!-- Shoe Collection Section -->
+<section id="collection" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Our Collection</h2>
+        <div class="row" id="shoeGrid">
+            <!-- Shoe 1 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe1Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/Airmax 1.jpg" class="d-block w-100" alt="Airmax 90 - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Airmax 2.jpg" class="d-block w-100" alt="Airmax 90 - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Airmax 3.jpg" class="d-block w-100" alt="Airmax 90 - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe1Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe1Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Airmax 90</h5>
+                        <p class="card-text">Ksh 3,500</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 2 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe2Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/J 4 red 1.jpg" class="d-block w-100" alt="Jordan 4 Red - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/J 4 red 2.jpg" class="d-block w-100" alt="Jordan 4 Red - Side View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe2Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe2Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jordan 4 Red</h5>
+                        <p class="card-text">Ksh 3,500</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 3 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe3Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/RUBBER 1.jpg" class="d-block w-100" alt="Casual Sneakers - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/RUBBER 2.jpg" class="d-block w-100" alt="Casual Sneakers - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/RUBBER 3.jpg" class="d-block w-100" alt="Casual Sneakers - Back View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/RUBBER 4.jpg" class="d-block w-100" alt="Casual Sneakers - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe3Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe3Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Casual Sneakers</h5>
+                        <p class="card-text">Ksh 3,500</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 4 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe4Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/SB.jpg" class="d-block w-100" alt="NIKE SB Shoes - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/SB 2.jpg" class="d-block w-100" alt="NIKE SB Shoes - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="shoe/SB 3.jpg" class="d-block w-100" alt="NIKE SB Shoes - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe4Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe4Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">NIKE SB Shoes</h5>
+                        <p class="card-text">Ksh 3,500</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 5 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe5Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/CLARKS 1.jpg" class="d-block w-100" alt="Clarks Loafers - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/CLARKS 2.jpg" class="d-block w-100" alt="Clarks Loafers - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/CLARKS 3.jpg" class="d-block w-100" alt="Clarks Loafers - Back View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/CLARKS 4.jpg" class="d-block w-100" alt="Clarks Loafers - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe5Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe5Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Clarks Loafers</h5>
+                        <p class="card-text">Ksh 3,000</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 6 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe5Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/JORDAN long 1.jpg" class="d-block w-100" alt="LongCut Jordan - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/JORDAN long 2.jpg" class="d-block w-100" alt="LongCut Jordan - Side View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe5Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe5Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">LongCut Jordan</h5>
+                        <p class="card-text">Ksh 3,500</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 7 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe5Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/Nike SB 1.jpg" class="d-block w-100" alt="NIKE SB SNEAKERS - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Nike SB 2.jpg" class="d-block w-100" alt="NIKE SB SNEAKERS - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Nike SB 3.jpg" class="d-block w-100" alt="NIKE SB SNEAKERS - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe5Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe5Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">NIKE SB SNEAKERS</h5>
+                        <p class="card-text">Ksh 3,750</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 8 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe5Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/Venom 1.jpg" class="d-block w-100" alt="Venom airforce - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Venom 2.jpg" class="d-block w-100" alt="Venom airforce - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Venom 3.jpg" class="d-block w-100" alt="Venom airforce - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe5Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe5Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Venom airforce</h5>
+                        <p class="card-text">Ksh 3,500</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 9 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe5Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/JORDAN H 1.jpg" class="d-block w-100" alt="JORDAN HIGHCUT - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/JORDAN H 2.jpg" class="d-block w-100" alt="JORDAN HIGHCUT - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/JORDAN H 3.jpg" class="d-block w-100" alt="JORDAN HIGHCUT - Back View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/JORDAN H 4.jpg" class="d-block w-100" alt="JORDAN HIGHCUT - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe5Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe5Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">JORDAN HIGHCUT</h5>
+                        <p class="card-text">Ksh 3,500</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 10 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe5Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/Converse 1.jpg" class="d-block w-100" alt="Converse highcut - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Converse 2.jpg" class="d-block w-100" alt="Converse highcut - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Converse 3.jpg" class="d-block w-100" alt="Converse highcut - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe5Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe5Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Converse highcut</h5>
+                        <p class="card-text">Ksh 4,000</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 11 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe5Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/Boots 1.jpg" class="d-block w-100" alt="CASAUAL BOOTS - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Boots 2.jpg" class="d-block w-100" alt="CASAUAL BOOTS - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Boots 3.jpg" class="d-block w-100" alt="CASAUAL BOOTS - Back View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Boots 4.jpg" class="d-block w-100" alt="CASAUAL BOOTS - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe5Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe5Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">CASAUAL BOOTS</h5>
+                        <p class="card-text">Ksh 4,500</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 12 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe5Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/NAKED WOLFE 1.jpg" class="d-block w-100" alt="NAKED WOLFE - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/NAKED WOLFE 2.jpg" class="d-block w-100" alt="NAKED WOLFE - Side View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe5Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe5Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">NAKED WOLFE</h5>
+                        <p class="card-text">Ksh 3,500</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 13 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe5Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/jordan 9 1.jpg" class="d-block w-100" alt="JORDAN 9 - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/jordan 9 2.jpg" class="d-block w-100" alt="JORDAN 9 - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/jordan 9 3.jpg" class="d-block w-100" alt="JORDAN 9 - Back View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/jordan 9 4.jpg" class="d-block w-100" alt="JORDAN 9 - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe5Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe5Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">JORDAN 9</h5>
+                        <p class="card-text">Ksh 3,500</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 14 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe5Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/SLIPPERS.jpg" class="d-block w-100" alt="SLIPPERS SANDLE - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/SLIPPERS2.jpg" class="d-block w-100" alt="SLIPPERS SANDLE - Back View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/SLIPPERS3.jpg" class="d-block w-100" alt="SLIPPERS SANDLE - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe5Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe5Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">SLIPPERS SANDLE</h5>
+                        <p class="card-text">Ksh 2,000</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe 15 with Sliding Images -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div id="shoe6Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/shoe/Hoonigan 1.jpg" class="d-block w-100" alt="SB CUSTOMISED - Front View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="shoe/Hoonigan 2.jpg" class="d-block w-100" alt="SB CUSTOMISED - Side View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Hoonigan 3.jpg" class="d-block w-100" alt="SB CUSTOMISED - Back View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/shoe/Hoonigan 4.jpg" class="d-block w-100" alt="SB CUSTOMISED - Back View">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#shoe6Carousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#shoe6Carousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">SB CUSTOMISED</h5>
+                        <p class="card-text">Ksh 3,500</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="shoe-list"></div> <!-- Container for shoe data -->
+
+       <!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Why Your Shoes Matter</h2>
+        <div class="row align-items-center mt-4">
+            <div class="col-md-6">
+                <img src="/shoe/J4 3.jpg" alt="Stylish Shoes" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <p class="lead">
+                    At Shoeyoursole, we believe that shoes are more than just a fashion accessory—they are a powerful expression of your personality and confidence. A great pair of shoes not only enhances your appearance but also makes every step you take more comfortable, boosting your confidence with every move.
+                </p>
+                <p>
+                    Whether you're hitting the streets or stepping into a special occasion, the right pair of shoes can elevate your style, complement your outfit, and provide the support you need to feel at your best. From classic designs to the latest trends, Shoeyoursole offers footwear that blends style with function, ensuring you look great and feel even better.
+                </p>
+                <p>
+                    Remember, your shoes make your moves! With the perfect pair, you're always walking with confidence.
+                </p>
+                <a href="#collection" class="btn btn-primary mt-3">Shop Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Location Section -->
+<section id="location" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Find Us</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p>Our store is located at:</p>
+                <address>
+                    Ronald Ngala,<br>
+                    Shoeyoursole,<br>
+                    RNG Building,<br>
+                    Kenya.
+                </address>
+                <p>Opening Hours: Mon-Sat, 9 AM - 6 PM</p>
+            </div>
+            <div class="col-md-6">
+                <!-- Google Map Embed or Static Map Image -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=..."
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Get in Touch</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Contact Information</h4>
+                <p>Email: <a href="mailto:info@shoeyoursole.com">info@shoeyoursole.com</a></p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="col-md-6">
+                <form action="contact.php" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Shoeyoursole. All Rights Reserved.</p>
+         <!-- Decorative boxes in the footer -->
+        <div class="nested-boxes"></div>
+        <div class="nested-boxes"></div>
+        <div class="nested-boxes"></div>
+        <div>
+            <!-- Social Media Links in Footer -->
+            <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

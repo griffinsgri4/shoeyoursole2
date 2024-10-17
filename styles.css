@@ -1,0 +1,354 @@
+/* General Styling */
+body {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-optical-sizing: auto;
+    line-height: 1.6;
+    background-color: #f1f1f1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+}
+/* Nested Color Background in Small Boxes */
+.nested-boxes {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, yellow 33%, green 33%, green 66%, blue 66%);
+    /* Adding a gradient background that alternates colors */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.nested-boxes:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+/* Navbar Styles */
+.navbar {
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(228, 228, 228);
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+    margin-right: 30px;
+}
+
+.navbar-brand:hover {
+    color: #007bff;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #333;
+}
+
+/* Social Media Icons in Navbar */
+.navbar-nav .nav-link i {
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link i:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    height: 80vh; /* Increased height for a more presentable hero section */
+    overflow: hidden;
+}
+
+/* Video Styling */
+.hero-section .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send video to the background */
+    overflow: hidden;
+}
+
+.hero-section .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire section */
+}
+
+/* Hero Content Styling */
+.hero-section .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for text readability over video */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem; /* Adjust font size for better presentation */
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Shoe Collection Section */
+#collection {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#collection h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Styling for the Card */
+.card {
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Carousel Image Styling */
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card .carousel {
+    max-height: 300px;
+    overflow: hidden;
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+/* Buy Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Shoe List */
+#shoe-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.shoe-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+}
+
+.shoe-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.shoe-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.shoe-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Location Section */
+#location {
+    background: #fff;
+    padding: 60px 0;
+}
+
+#location h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#location address {
+    font-style: normal;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+iframe {
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #007bff;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background: #f8f9fa;
+    padding: 20px 0;
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 3px solid #007bff;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-icons {
+    font-size: 1.5rem;
+}
+
+footer .social-icons a {
+    margin-right: 15px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    #collection h2 {
+        font-size: 2rem;
+    }
+
+    .card-body h5 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+}
