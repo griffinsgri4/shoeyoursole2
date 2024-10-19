@@ -1,8 +1,8 @@
-const shoes = [
+/*const shoes = [
     {name: 'Classic Leather Sneakers', price: 'Ksh 2,350', image: '/shoe/'},
     {name: 'Sporty Running Shoes', price: 'Ksh 1,500', image: 'shoe2.jpg'},
     {name: 'Elegant High Heels', price: 'Ksh 1,000', image: 'shoe3.jpg'}
-];
+];*/
 
 const shoeList = document.getElementById('shoe-list');
 
